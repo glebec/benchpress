@@ -50,17 +50,13 @@ const chart = new Chart(document.getElementById('chart'), {
   }
 });
 
-function addNativePoint (x, y) {
-  nativePoints.push({ x, y });
-  chart.update();
-}
-
-function addMergePoint (x, y) {
-  mergePoints.push({ x, y });
-  chart.update();
-}
-
-function addBubblePoint (x, y) {
-  bubblePoints.push({ x, y });
+function addPoint (algoName, x, y) {
+  const point = { x, y };
+  switch (algoName) {
+    case 'native': nativePoints.push(point); break;
+    case 'merge': mergePoints.push(point); break;
+    case 'bubble': bubblePoints.push(point); break;
+    default: throw Error('unexpected algo name', algoName);
+  }
   chart.update();
 }
