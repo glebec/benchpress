@@ -1,0 +1,48 @@
+<html>
+
+  <head>
+
+    <title>Sorting Benchmarker</title>
+
+    <script src="../node_modules/lodash/lodash.min.js" defer></script>
+    <script src="../node_modules/benchmark/benchmark.js" defer></script>
+    <script src="../node_modules/chart.js/dist/Chart.min.js" defer></script>
+
+    <script src="js/sorts.js" defer></script>
+    <script src="js/ui.js" defer></script>
+    <script src="js/chart.js" defer></script>
+    <script src="js/bench.js" defer></script>
+
+    <link rel="stylesheet" href="../node_modules/milligram/dist/milligram.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <h1 class="center">Sorting Benchmarks</h1>
+
+      <div class="chartbox">
+        <canvas id="chart" width="400" height="200"></canvas>
+      </div>
+
+      <table id="stats">
+        <thead>
+          <tr>
+            <th>Elements in array</th>
+            <th>Algorithm</th>
+            <th>Ms per sort</th>
+            <th>Margin of error</th>
+            <th>Samples</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+
+    </div>
+
+  </body>
+
+</html>
