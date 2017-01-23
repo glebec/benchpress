@@ -1,5 +1,7 @@
 # Sorting Algorithm Benchmarking Demo
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/glebec/benchpress.svg)](https://greenkeeper.io/)
+
 A small visualization of sorting algorithms.
 
 ```sh
